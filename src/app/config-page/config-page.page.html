@@ -1,0 +1,75 @@
+<ion-header >
+  <ion-toolbar style="
+    padding: 1rem 0;
+    padding-top: 1rem;">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/main-screen">
+        <ion-icon name="arrow-back" style="font-size: 30px; padding-top: 10px;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title style="padding-top: 10px; padding-left: 75px;">Configurações</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="main-content">
+  <div class="profile-section">
+  <ion-avatar>
+    <img alt="perfil" [src]="avatarUrl" />
+  </ion-avatar>
+
+  <!-- Ícone de editar (já existia) -->
+  <ion-icon name="create-outline" class="edit-icon" (click)="fileInput.click()"></ion-icon>
+  <input type="file" accept="image/*" #fileInput hidden (change)="onFileSelected($event)" />
+
+  <!-- Ícone de remover (lixeira) -->
+  <ion-icon
+    *ngIf="isCustomImage"
+    name="trash-outline"
+    class="delete-icon"
+    (click)="removePhoto()"
+  ></ion-icon>
+</div>
+
+
+  <div class="info-section">
+    <label>Seu usuário</label>
+    <ion-input
+      [(ngModel)]="username"
+      class="info-input"
+      placeholder="Digite seu usuário"
+    ></ion-input>
+
+    <label>Sobre você</label>
+    <ion-textarea
+      [(ngModel)]="about"
+      class="info-input"
+      placeholder="Escreva algo sobre você"
+      auto-grow="true"
+    ></ion-textarea>
+  </div>
+
+  <div class="button-section">
+    <ion-button (click)="saveProfile()" class="botao-salvar">SALVAR</ion-button>
+  </div>
+
+  <div class="contact-section">
+    <ion-item lines="none">
+      <ion-icon slot="start" name="logo-instagram" style="color: rgb(222, 0, 155);"></ion-icon>
+      <ion-label>Nos siga no Instagram</ion-label>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" name="mail-outline" style="color: rgb(11, 117, 255);"></ion-icon>
+      <ion-label>Fale conosco: mindcode.br&#64;gmail.com</ion-label>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-icon slot="start" name="logo-github" style="color: rgb(156, 0, 217);"></ion-icon>
+      <ion-label>Confira o SourceCode aqui: <a href="#">link</a></ion-label>
+    </ion-item>
+  </div>
+
+  <div class="button-section">
+    <ion-button routerLink="/home" class="botao-sair">SAIR</ion-button>
+  </div>
+</ion-content>
