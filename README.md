@@ -1,42 +1,37 @@
-# 🧠 MindCode - Quiz Tech Interativo
-
-[![Status](https://img.shields.io/badge/status-em%20andamento-yellow)](#)  
-[![Ionic](https://img.shields.io/badge/Ionic-7%2B-blue.svg?logo=ionic)](https://ionicframework.com/)  
-[![Angular](https://img.shields.io/badge/Angular-16%2B-red.svg?logo=angular)](https://angular.io/)  
-[![Firebase](https://img.shields.io/badge/Firebase-em%20andamento-yellow?logo=firebase)](https://firebase.google.com/)  
+# MindCode - Quiz Mobile de Tecnologia
 
 ---
 
-## 🧩 Sobre o projeto
+## 📖 Sobre o Projeto
 
-**MindCode** é um aplicativo de quiz voltado para a área de **Tecnologia da Informação**, onde os usuários testam seus conhecimentos, acumulam pontos e competem no ranking. Inspirado por apps como **Mimo**, **Duolingo** e **Perguntados**, o MindCode oferece uma experiência gamificada, leve e divertida.  
+O **MindCode** é um aplicativo mobile de **quiz voltado à área de tecnologia**, com foco em aprendizado dinâmico e gamificação.  
+A proposta é oferecer uma plataforma onde o usuário possa **testar conhecimentos**, **acumular pontos** e acompanhar seu desempenho em **rankings**.  
 
-> Projeto desenvolvido com **Ionic 7+**, **Angular 16+** e integração com **Firebase Authentication** e **Supabase** para gerenciamento de dados e ranking.
-
----
-
-## 🚀 Funcionalidades já implementadas
-
-✅ Sistema de cadastro e login com **Firebase Authentication**  
-✅ Tela de quiz com perguntas e respostas interativas  
-✅ Perfil de usuário com dados visuais (nome, e-mail e avatar)  
-✅ Upload de **foto de perfil (avatar)** usando apenas Localstorage  
-✅ Design responsivo com estrutura modular usando NgModules  
-✅ Interface inspirada em apps de gamificação 
+Inspirado em soluções como *Duolingo* e *Mimo*, o MindCode combina **simplicidade, engajamento e tecnologia moderna** para proporcionar uma experiência intuitiva e educativa.
 
 ---
 
-## 🧪 Em andamento
+## ✨ Funcionalidades Implementadas
 
-🛠️ Integração com **Firestore Database** para ranking e pontuação  
-🛠️ Acúmulo de pontos por usuário autenticado<br>
-🛠️ Tela de ranking com dados em tempo real<br>
-🛠️ Validação de pontuação por dificuldade<br>
-🛠️ Testes unitários e e2e com cobertura automatizada  
+- Autenticação de usuários com **Firebase Authentication**  
+- Cadastro e login com validação de dados  
+- Módulo de quiz com perguntas interativas  
+- Perfil do usuário (nome, e-mail e avatar)  
+- Upload de avatar armazenado localmente  
+- Estrutura modular e responsiva com **Ionic + Angular**
 
 ---
 
-## 📌 Tecnologias e Ferramentas
+## 🔧 Funcionalidades em Desenvolvimento
+
+- Integração com **Firestore Database** para ranking e pontuação em tempo real  
+- Sistema de progressão com níveis de dificuldade  
+- Tela de ranking global  
+- Testes unitários e e2e automatizados  
+
+---
+
+## 🛠️ Tecnologias Utilizadas
 
 - [Ionic 7+](https://ionicframework.com/)  
 - [Angular 16+](https://angular.io/)  
@@ -47,33 +42,12 @@
 
 ---
 
-## 👥 Equipe
-
-> Projeto desenvolvido por um grupo de estudantes apaixonados por tecnologia e educação! 💡  
-
----
-
-## 📱 Instalação
+## 📲 Instalação e Execução
 
 Clone o projeto e instale as dependências:
 
 ```bash
-git clone https://github.com/seu-usuario/mindcode.git
+git clone https://github.com/seuusuario/mindcode.git
 cd mindcode
 npm install
 ionic serve
-```
-
-Para gerar o APK:
-
-```bash
-ionic build
-ionic cap add android
-ionic cap open android
-```
-
-🌟 Contribuições
-Contribuições são super bem-vindas! Sinta-se livre para abrir issues, sugerir melhorias ou mandar um pull request. Bora codar juntos? 😄💻
-
-🧠 "Aprender pode ser divertido, e desafiar-se é o primeiro passo para dominar a tecnologia!"
-– Equipe MindCode
